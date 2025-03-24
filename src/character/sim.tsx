@@ -12,6 +12,7 @@ export const CharacterComponent = ({info, children}: SimsType) =>{
         <div>
             <h2>{info.name} {info.surname}</h2>
             <p>{children}</p>
+            <img src={info.photo} alt={info.name}/>
         </div>
     )
 }
