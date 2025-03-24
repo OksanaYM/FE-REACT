@@ -1,5 +1,5 @@
 
-
+import './character.css'
 import {ISim} from "../assets/sim.ts";
 
 type SimsType ={
