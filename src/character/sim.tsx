@@ -1,0 +1,4 @@
+
+type SimType ={
+    info:
+}
