@@ -1,4 +1,15 @@
-export const simpsons = [
+export interface ISim{
+    name: string;
+    surname: string;
+    age: number;
+    info: string;
+    photo: string
+}
+
+
+
+
+export const simpsons:ISim[] = [
     {
         name: 'Bart',
         surname: 'Simpson',
@@ -35,3 +46,4 @@ export const simpsons = [
         photo: 'https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.png'
     },
 ];
+
