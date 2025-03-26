@@ -8,12 +8,15 @@ export const UsersComponents = ()=> {
     const [users, setUsers] = useState<IUser[]>([]);
     useEffect( ()=>{
         getUsers()
-            .then(value => setUsers(value));
+            .then(response => {
+                setUsers(response)
+            });
 
     }, []);
 
     return (
-       <div>{
+       <div>
+           {
            users.map(user => <User user={user} key={user.id} />)
        }
 
