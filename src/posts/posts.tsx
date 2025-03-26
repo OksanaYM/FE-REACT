@@ -15,7 +15,7 @@ export const Posts = () =>{
     return(
         <div>
             {
-                posts.map(post => <Post post={post} key={post.id}/>)
+                posts.map((post: IPostsDummy, index:number) => <Post post={post} key={index}/>)
             }
         </div>
     )
