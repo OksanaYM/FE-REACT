@@ -1,21 +1,22 @@
 import {useEffect, useState} from "react";
 import {getPosts} from "../post/posts.ts";
-import {IPostsDummy} from "../post/posts.ts";
+import {IPosts} from "../post/posts.ts";
 import {Post} from "../post/post.tsx";
 
+
 export const Posts = () =>{
-    const [posts, setPosts] = useState<IPostsDummy[]> ([]);
+    const [posts, setPosts] = useState<IPosts[]> ([]);
     useEffect( () => {
         getPosts()
             .then (response =>{
-                setPosts(response)
+                setPosts(response.posts)
             })
     }, []);
 
     return(
         <div>
             {
-                posts.map((post: IPostsDummy, index:number) => <Post post={post} key={index}/>)
+                posts.map((post) => <Post post={post} key={post.id}/>)
             }
         </div>
     )
