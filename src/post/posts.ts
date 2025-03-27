@@ -8,10 +8,13 @@ export interface IPostsDummy {
 }
 
 export interface IPosts {
-    userId: number;
     id: number;
     title: string;
     body: string;
+    tags: string;
+    reactions: string;
+    views: string;
+    userId: number
 
 }
 
