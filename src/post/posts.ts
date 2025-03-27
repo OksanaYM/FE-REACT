@@ -21,7 +21,7 @@ export interface IPosts {
 
 }
 
-const getPosts = async(): Promise<IPostsDummy[]> => {
+const getPosts = async(): Promise<IPostsDummy> => {
     return await fetch(postsUrl)
         .then(value => value.json() )
 
