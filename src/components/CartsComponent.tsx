@@ -17,7 +17,7 @@ export const CartsComponent =() =>{
 
         }
 
-    }, []);
+    }, [id]);
     return(
         <div>
             { carts.map((cart:ICart)=>
