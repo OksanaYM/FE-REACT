@@ -1,7 +1,7 @@
 import {IUserModel} from "../models/IUserModel.ts";
 import {ICartModel} from "../models/ICartModel.ts";
 
-export const baseUrl = 'https://dummyjson.com'
+const baseUrl = 'https://dummyjson.com'
 
 export const userService ={
     getAllUsers: async(): Promise<IUserModel> =>{
