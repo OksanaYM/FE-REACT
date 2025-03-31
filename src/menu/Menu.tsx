@@ -5,7 +5,7 @@ export const Menu = () =>{
         <ul>
             <li>
                 <Link to={'/users'}>Users</Link>
-            </li>\
+            </li>
         </ul>
     )
 }
