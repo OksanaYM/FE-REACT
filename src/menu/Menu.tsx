@@ -4,7 +4,7 @@ export const Menu =() =>{
     return(
         <ul>
             <li>
-                <Link to={'/users'}>USERS<Link/>
+                <Link to={'/users'}>USERS</Link>;
             </li>
         </ul>
     )
