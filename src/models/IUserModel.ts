@@ -1,7 +1,7 @@
 import {IUser} from "./IUser.ts";
 
 export interface IUserModel {
-    users: IUser;
+    users: IUser[];
     total: number;
     limit: number;
     skip: number

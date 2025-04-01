@@ -14,10 +14,10 @@ export const UsersComponent = () =>{
 
     }, []);
     return(
-        <>{
+        <div>{
             users.map((user: IUser) =>
             <UserComponent key={user.id} user={user}/>)
         }
-        </>
+        </div>
     )
 }
