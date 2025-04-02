@@ -6,8 +6,9 @@ export const PaginationComponent = () =>{
     return(
         <div>
             <button onClick={ ()=>{
+                if (currentPage >1 ){
                     setSearchParams({page: (--currentPage).toString()})
-            }}>PREV</button>
+            }}}>PREV</button>
             <button onClick={ () =>{
                     setSearchParams({page: (++currentPage).toString()})
             }}>NEXT</button>
