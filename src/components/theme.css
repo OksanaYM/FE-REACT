@@ -1,5 +1,33 @@
-.theme{
-    width: 90vw;
-    height: 90vh;
-
+*{
+    padding: 10px;
 }
+.dark{
+    width: 90vw;
+    height: 30vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: darkblue;
+    color: lightskyblue;
+}
+
+.light{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: darkblue;
+    width: 90vw;
+    height: 30vh;
+    background-color: lightskyblue;
+}
+button{
+    margin-top: 30px;
+    margin-left: 300px;
+}
+
+
+
+
+

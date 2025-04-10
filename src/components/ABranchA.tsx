@@ -6,6 +6,7 @@ export const ABranchA = () =>{
     const {theme} = useContext(MyContext)
     return(
         <div className={theme}>
+            Theme value is - {theme}
 
         </div>
     )
