@@ -12,6 +12,9 @@ export const Menu = () =>{
             <li>
                 <Link to={'/comments'}>COMMENTS</Link>
             </li>
+            <li>
+                <Link to={'/complex'}>COMPLEX</Link>
+            </li>
         </ul>
     )
 }
