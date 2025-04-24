@@ -1,4 +1,4 @@
-export interface Results {
+export interface IResults {
   adult: boolean;
   backdrop_path: string;
   genre_ids: number[];
@@ -17,7 +17,7 @@ export interface Results {
 
 export interface IAllMovies {
   page: number;
-  results: Results[];
+  results: IResults[];
   total_pages: number;
   total_results: number;
 }
