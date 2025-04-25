@@ -1,4 +1,4 @@
-import {IResults} from "../Modules/IMovies.ts";
+import {IAllMovies} from "../Modules/IMovies.ts";
 
 
 const baseURL = import.meta.env.VITE_API_URL
@@ -8,17 +8,16 @@ const token = import.meta.env.VITE_TOKEN
 
 
 export const serviceMovies = {
-    getMovies: async (): Promise<IResults> => {
-        return await fetch(baseURL + '/discover/movie?page=2', {
+    getMovies: (): Promise<IAllMovies> => {
+        return fetch(baseURL + '/discover/movie?page=2', {
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${token}`
-            },
-            credentials: 'include'
+            }
         })
-            .then(value => {
-                return value.json()
-            })
+            .then(value =>
+                 value.json()
+            )
     }
 
 }

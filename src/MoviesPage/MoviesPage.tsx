@@ -1,22 +1,22 @@
 import {useEffect, useState} from "react";
 import {serviceMovies} from "../services/api.service.ts";
-import {IResults} from "../Modules/IMovies.ts";
-import {ResultTypeModel} from "../Modules/ResultTypeModel.ts";
+import {IAllMovies, IResults} from "../Modules/IMovies.ts";
+
 
 
 export const MoviesPage = () =>{
-    const [movies, setMovies] = useState<IResults[]>([]);
+    const [movies, setMovies] = useState<IAllMovies>();
     useEffect(() => {
         serviceMovies.getMovies()
-            .then(({movies}:ResultTypeModel) =>{
-                setMovies(movies)
+            .then((value) =>{
+                setMovies(value)
             })
     }, []);
 
     return(
        <div>
            {
-               movies.map((movie: IResults)=>
+               movies?.results.map((movie: IResults)=>
                <div>{movie.title} {movie.id}</div>)
            }
 
