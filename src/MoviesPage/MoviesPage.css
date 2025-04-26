@@ -1,0 +1,16 @@
+.movies-main {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-row-gap: 1%;
+    grid-column-gap: 0.5%;
+}
+
+.movie-container {
+    display: flex;
+    flex-direction:column ;
+}
+
+.movie-container .title {
+    display: flex;
+    justify-content: center;
+}

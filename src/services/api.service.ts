@@ -8,8 +8,8 @@ const token = import.meta.env.VITE_TOKEN
 
 
 export const serviceMovies = {
-    getMovies: (): Promise<IAllMovies> => {
-        return fetch(baseURL + '/discover/movie?page=2', {
+    getMoviesData: (page: number): Promise<IAllMovies> => {
+        return fetch(baseURL + `/discover/movie?page=${page}`, {
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${token}`
