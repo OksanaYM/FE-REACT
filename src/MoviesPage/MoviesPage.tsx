@@ -1,9 +1,9 @@
 import {useEffect, useState} from "react";
-import {serviceMovies} from "../services/api.service.ts";
+import {imgUrl, serviceMovies} from "../services/api.service.ts";
 import {IAllMovies, IResults} from "../Modules/IMovies.ts";
 import './MoviesPage.css'
-import {MovieDetailsPage} from "../MovieDetailPage/MovieDetailsPage.tsx";
-const baseImageUrl: string = 'https://image.tmdb.org/t/p/original';
+
+
 
 
 export const MoviesPage = () => {
@@ -32,7 +32,7 @@ export const MoviesPage = () => {
                 {
                     movies?.results.map((movie: IResults) =>
                         <div className="movie-container">
-                            <img className="movie-image" src={baseImageUrl + movie.backdrop_path} alt={movie.title}/>
+                            <img className="movie-image" src={imgUrl + movie.backdrop_path} alt={movie.title}/>
                             <div className="title">{movie.title}</div>
                         </div>
 

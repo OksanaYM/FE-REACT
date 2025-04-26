@@ -1,6 +1,6 @@
 
 
-export const MovieDetailsPage = () => {
+export const MoviesList = () => {
     return (
         <div>Hello
         </div>
