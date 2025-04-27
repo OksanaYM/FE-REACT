@@ -113,9 +113,10 @@ export const MoviesList = () => {
         setIsSearching(false);
     };
     return(
-        <div><h1 className="main-title">
-            {isSearching ? `Search Results for "${searchQuery}"` : ''}
-        </h1>
+        <div>
+            <h1 className="main-title">
+                {isSearching ? `Search Results for "${searchQuery}"` : ''}
+            </h1>
             <SearchInput onSearch={handleSearch} onReset={handleReset}/>
             <div className="movies-main">
                 {
@@ -124,25 +125,23 @@ export const MoviesList = () => {
                     )
                 }
 
-                <div className="buttons">
-                    <button
-                        onClick={handlePrevious}
-                        disabled={page === 1}
-                        className="buttons-previous">
-                        PREVIOUS
-                    </button>
-                    <span className="text-lg">Page {page} of {totalPages}</span>
-                    <button
-                        onClick={handleNext}
-                        disabled={page === totalPages}
-                        className="buttons-next">
-                        NEXT
-                    </button>
-                </div>
-
 
             </div>
-
+            <div className="buttons">
+                <button
+                    onClick={handlePrevious}
+                    disabled={page === 1}
+                    className="buttons-previous">
+                    PREVIOUS
+                </button>
+                <span className="text-lg">Page {page} of {totalPages}</span>
+                <button
+                    onClick={handleNext}
+                    disabled={page === totalPages}
+                    className="buttons-next">
+                    NEXT
+                </button>
+            </div>
 
         </div>
 

@@ -1,3 +1,7 @@
+.main-title {
+    margin-top: 125px;
+    text-align: center;
+}
 .search-form {
     display: flex;
     flex-direction: column;
@@ -34,7 +38,8 @@
 }
 .buttons {
     width: 100%;
-    text-align: center
+    text-align: center;
+    margin-top: 50px;
 }
 .buttons-previous, .buttons-next{
     background-color: #3b82f6;

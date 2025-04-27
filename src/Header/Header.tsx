@@ -1,7 +1,10 @@
 import './header.css'
+import {UserInfo} from "../UserInfo/UserInfo.tsx";
 export const Header = () => {
-    return ( <>
-        <h1>MOVIES:</h1>
-        </>
+    return (
+        <nav>
+            <h1>MOVIES:</h1>
+            <UserInfo/>
+        </nav>
     );
 }

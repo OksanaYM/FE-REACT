@@ -6,6 +6,7 @@ import {IMovie} from "../Models/Movie.ts";
 import './MovieInfo.css';
 import {GenreBadge} from "../GenreBadge/GenreBadge.tsx";
 import {useNavigate} from "react-router-dom";
+import {PosterPreview} from "../PosterPreview/PosterPreview.tsx";
 
 export const imgUrl = import.meta.env.VITE_IMG_URL
 
@@ -26,15 +27,7 @@ export const MovieInfo = () =>{
         <>
             <div className="container">
                 <div className="movie-card">
-                    {movie?.poster_path ? (
-                        <img
-                            src={`${imgUrl}${movie?.poster_path}`}
-                            alt={movie?.title}
-                            className="movie-poster"
-                        />
-                    ) : (
-                        <div className="no-poster">No Poster Available</div>
-                    )}
+                    <PosterPreview movie={movie} />
                     <div className="movie-details">
                         <h2 className="movie-title">{movie?.title}</h2>
                         <p className="movie-tagline">{movie?.tagline}</p>

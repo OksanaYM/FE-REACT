@@ -1,0 +1,30 @@
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.user-icon {
+    width: 48px;
+    height: 48px;
+    background-color: #3b82f6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.user-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
