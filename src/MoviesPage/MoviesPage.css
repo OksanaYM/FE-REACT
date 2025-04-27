@@ -1,6 +1,6 @@
 .movies-main {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 24.7% 24.7% 24.7% 24.7%;
     grid-row-gap: 1%;
     grid-column-gap: 0.5%;
 }

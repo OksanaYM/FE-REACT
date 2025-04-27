@@ -1,11 +1,9 @@
 import {createBrowserRouter} from "react-router-dom";
-import {MoviesList} from "../MoviesList/MoviesList.tsx";
 import {MainLayout} from "../MainLayout/MainLayout.tsx";
+import {MovieInfo} from "../MovieInfo/MovieInfo.tsx";
 
 export const routes = createBrowserRouter([
-    {
-        path: '/', element: <MainLayout/>, children:[
-            {path: 'movie/:id', element: <MoviesList/> }
-        ]
-    }
+    {path: '/', element: <MainLayout/>},
+    {path: '/genres/:id', element: <MainLayout/>},
+    {path: '/movie/:id', element: <MovieInfo/> }
 ])
