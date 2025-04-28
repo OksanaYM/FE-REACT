@@ -11,7 +11,7 @@ export const imgUrl = import.meta.env.VITE_IMG_URL
 
 
 export const serviceMovies = {
-    getMoviesData: (page: number, query: string, type: string = 'name'): Promise<IAllMovies> => {
+    getMovies: (page: number, query: string, type: string = 'name'): Promise<IAllMovies> => {
         let endpoint: string = baseURL;
         if (query && type === 'name') {
             endpoint = `${baseURL}/search/movie?query=${encodeURIComponent(query)}&page=${page}`;

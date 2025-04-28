@@ -77,7 +77,7 @@ export const MoviesList = () => {
             setSearchType('genre');
             setSearchQuery(id);
         }
-        serviceMovies.getMoviesData(page, searchQuery, searchType)
+        serviceMovies.getMovies(page, searchQuery, searchType)
             .then((result) =>{
                 setMovies(result);
                 setTotalPages(result.total_pages);
