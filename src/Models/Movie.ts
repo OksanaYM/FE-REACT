@@ -21,7 +21,6 @@ export interface Spoken_language {
 export interface IMovie {
   adult: boolean;
   backdrop_path: string;
-  belongs_to_collection?: any;
   budget: number;
   genres: IGenre[];
   homepage: string;

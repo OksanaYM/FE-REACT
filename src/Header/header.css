@@ -19,7 +19,7 @@ nav h1 {
     font-size: 24px;
     font-weight: bold;
     margin: 0;
-    flex: 1; /* Allows h1 to take available space for centering */
+    flex: 1;
     display: flex;
     justify-content: center;
 }

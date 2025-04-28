@@ -67,27 +67,6 @@
     color: #1f2937;
 }
 
-.loading,
-.error,
-.no-data {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-size: 20px;
-}
-
-.loading {
-    color: #6b7280;
-}
-
-.error {
-    color: #dc2626;
-}
-
-.no-data {
-    color: #6b7280;
-}
 
 @media (min-width: 768px) {
     .movie-card {
